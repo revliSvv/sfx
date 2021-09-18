@@ -1,0 +1,43 @@
+<DOCTYPE html>
+<title> Solve for x2 nerds </title>
+
+<p>
+<em>
+var x1;
+var x2; 
+
+var e = {
+  value: x(x2),
+  square: ' '
+  // empty property because you can't call e.value in e 
+  /* 
+  sends x₁ as a parameter to x(), where parameter y of x(y) is x₁ and if x₁(y henceforth) ↲
+  is <= 10, then y = y squared + 5y (5x₁) + 3, where x₂ is x(x(x₁)).
+  */
+}; 
+
+e.square =  e.value * e.value;
+// e.value = x(x ∘ x₂) or e.value = x(x(x₂))
+
+x2 = x(x1);
+
+x2 = 1 + x(x2 - x1) * 0;
+
+function x(y) {
+  y = x2;
+  if (y < 10) {
+    y = (e.square * 1) + (5 * y) + 3;
+    return y;
+  }
+  else if (y == 10) {
+    y = (e.value * 3) + (-y) - 13;
+    return y;
+  }
+  else if (y > 10) {
+    y = 5;
+    return y;
+  }
+}
+
+</em>
+</p>
